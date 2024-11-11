@@ -1,0 +1,51 @@
+.speaker-slider {
+    display: flex;
+    overflow-x: scroll;
+  }
+  
+  .speaker-card {
+    width: 200px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .speaker-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; 
+  }
+  
+  .speaker-modal.show {
+    display: block;
+  }
+  
+  .close-modal {
+    background: none;
+    border: none;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .speaker-slider {
+      flex-direction: column;
+    }
+  }
+
+  img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  
